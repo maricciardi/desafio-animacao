@@ -1,0 +1,53 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60rem;
+    width: 100%;
+    background-image: url('/assets/hero-background.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    opacity: .5;
+    animation: fadeIn 4s forwards;
+
+    & nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 70rem;
+        width: 100%;
+        padding: 3.5rem 10rem 0 10rem;
+    }
+
+    & h1 {
+        font: var(--title-lg);
+        color: var(--text-title);
+        margin-top: 10.25rem;
+        max-width: 41rem;
+        opacity: 0;
+        animation: fadeIn 6s forwards;
+    }
+
+    & p {
+        font: var(--body-lg);
+        color: var(--text-body);
+        margin-top: 2rem;
+        max-width: 35.5rem;
+        opacity: 0;
+        animation: fadeIn 12s forwards;
+        margin-inline: auto;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+

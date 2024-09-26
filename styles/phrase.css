@@ -1,0 +1,25 @@
+.phrase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 14rem;
+    margin-inline: auto;
+    max-width: 75rem;
+    width: 100%;
+    position: relative;
+
+    & p {
+        color: var(--text-body);
+        font: var(--subtitle);
+        display: inline;
+    }
+
+    & img {
+        display: block;
+        height: 88px;
+        /*opacity: 0;*/
+        position: absolute;
+    }
+}
