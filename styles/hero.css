@@ -9,7 +9,7 @@
     background-position: center;
     text-align: center;
     opacity: .5;
-    animation: fadeIn 4s forwards;
+    animation: fadeIn 8s forwards;
 
     & nav {
         display: flex;
@@ -26,7 +26,7 @@
         margin-top: 10.25rem;
         max-width: 41rem;
         opacity: 0;
-        animation: fadeIn 6s forwards;
+        animation: fadeIn 10s forwards;
     }
 
     & p {
@@ -35,7 +35,7 @@
         margin-top: 2rem;
         max-width: 35.5rem;
         opacity: 0;
-        animation: fadeIn 12s forwards;
+        animation: fadeIn 14s forwards;
         margin-inline: auto;
     }
 }

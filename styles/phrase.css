@@ -9,37 +9,29 @@
     max-width: 75rem;
     width: 100%;
     position: relative;
+    opacity: 0.4;
+    transition: opacity 1s ease;
+
+    & span {
+        color: var(--text-body);
+    }
 
     & p {
         color: var(--text-body);
         font: var(--subtitle);
         display: inline;
-        animation: fontWeight 6s forwards;
 
         & span {
-            animation: colorChange 6s forwards;
+            font-weight: 600;
         }
-    }
-
-    #p1 {
-        animation: fadeIn 1s forwards;
-        opacity: .2;
-    }
-
-    #p2 {
-        animation: fadeIn 1s forwards 1s;
-        opacity: .2;
-    }
-
-    #p3 {
-        animation: fadeIn 1s forwards 2s;
-        opacity: .2;
     }
 
     & img {
         display: block;
         height: 88px;
         position: absolute;
+        opacity: 0;
+        transition: opacity 1s ease;
     }
 
     & img[src*=book] {
@@ -47,24 +39,20 @@
         top: -5rem;
         rotate: 30deg;
         scale: .8;
-        animation: fadeIn 1s forwards;
-        opacity: 0;
     }
 
     & img[src*=ouija] {
         left: 3%;
         rotate: 100deg;
         scale: .8;
-        animation: fadeIn 1s forwards 1s;
-        opacity: 0;
+        transition-delay: .5s;
     }
 
     & img[src*=ball] {
         left: 90%;
         rotate: -30deg;
         scale: .8;
-        animation: fadeIn 1s forwards 2s;
-        opacity: 0;
+        transition-delay: 1s;
     }
 
     & img[src*=book]:hover {
@@ -84,21 +72,19 @@
 }
 
 
-@keyframes fontWeight {
-    0% {
-        font-weight: 300;
-    }
+.phrase:hover {
+    opacity: 1;
 
-    100% {
-        font-weight: 500;
-    }
-}
-
-@keyframes colorChange {
-    0% {
-        color: var(--text-body);
-    }
-    100% {
+    & span {
         color: var(--blue-light);
     }
+
+    & img {
+        opacity: 1;
+    }
 }
+
+    
+
+
+   

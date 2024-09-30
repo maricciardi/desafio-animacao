@@ -53,6 +53,7 @@ body {
     flex-direction: column;
     justify-content: center;
     position: relative;
+    overflow-x: hidden;
 }
 
 .blur {
@@ -63,5 +64,15 @@ body {
         top: 23rem;
         width: 100%;
     }
+
+    &.blur-2 {
+        top: 70rem;
+        width: 100%;
+        position: fixed;
+    }
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
