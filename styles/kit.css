@@ -7,9 +7,10 @@
     display: flex;
     flex-direction: column;
     background-image: url("../assets/blur-3.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position-y: center;
+    background-position-x: center;
     
 
     & #shine {
