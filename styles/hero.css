@@ -4,7 +4,7 @@
     align-items: center;
     height: 60rem;
     width: 100%;
-    background-image: url('/assets/hero-background.png');
+    background-image: url('./assets/hero-background.png');
     background-size: cover;
     background-position: center;
     text-align: center;
