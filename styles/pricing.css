@@ -11,6 +11,10 @@
     display: flex;
     flex-direction: column;
     
+    & #cards {
+        display: flex;
+        gap: 2rem;
+    }
 
     & #signature {
         font: var(--title-sm);
@@ -43,6 +47,25 @@
             top: -2%;
             left: -16%;
             scale: .6;
+        }
+
+        & #star-3 {
+            position: absolute;
+            bottom: -8%;
+            right: -18%;
+        }
+
+        & #star-4 {
+            position: absolute;
+            bottom: -12%;
+            right: -5%;
+            scale: .6;
+        }
+
+        & #bunny {
+            position: absolute;
+            top: -12.5%;
+            left: 10%;
         }
 
         & h4 {
@@ -92,10 +115,40 @@
             display: flex;
             flex-direction: column;
 
-            & .btn-secondary {
+            & .btn-primary, & .btn-secondary {
                 text-align: center;
-                margin-top: 1.5rem;
-                
+                margin-top: 1.5rem
+            }
+        }
+    }
+
+    & .card.bright {
+        background-color: var(--shape-hover);
+
+        & #card-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            & h4 {
+                color: var(--pink-light);
+            }
+
+            & #tag {
+                background-color: var(--shape-stroke);
+                padding: .6rem 1.25rem;
+                font: var(--font-tag);
+                text-transform: uppercase;
+                color: var(--text-body);
+                border-radius: 999px;
+            }
+        }
+
+        & ul {
+            & li {
+                background: url("../assets/icons/pinkstar.png") no-repeat left center;
+                background-size: 1rem;
+                padding-left: 1.6rem;
             }
         }
     }
