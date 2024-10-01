@@ -1,5 +1,7 @@
 .pricing {
-    background-image: url("../assets/pricing-background.png");
+    background-image: 
+        url("../assets/pricing-background.png"),
+        url("../assets/pricing-blur.png");
     background-size: cover;
     width: 100%;
     height: 78rem;
@@ -25,11 +27,14 @@
         position: relative;
         text-align: left;
         height: 26rem;
-        
+        margin-top: 8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         & #star-1 {
             position: absolute;
-            top: -16%;
+            top: -11%;
             left: -9%;
         }
 
@@ -67,6 +72,31 @@
             margin-top: .5rem;
         }
 
-        
+        & ul {
+            list-style-type: none;
+            font: var(--body-xs);
+            color: var(--text-body);
+            
+            & li + li {
+                margin-top: .75rem;
+            }
+
+            & li {
+                background: url("../assets/icons/bluestar.png") no-repeat left center;
+                background-size: 1rem;
+                padding-left: 1.6rem;
+            }
+        }
+
+        & .bottom {
+            display: flex;
+            flex-direction: column;
+
+            & .btn-secondary {
+                text-align: center;
+                margin-top: 1.5rem;
+                
+            }
+        }
     }
 }

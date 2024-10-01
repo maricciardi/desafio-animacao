@@ -6,26 +6,30 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
+    background-image: url("../assets/blur-3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    
 
     & #shine {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 1rem;
 
         h3 {
             font: var(--title-sm);
         }
 
         img {
-            width: 2rem;
+            width: 6rem;
             position: relative;
         }
     }
 
     & p {
         font: var(--body-md);
-        margin-top: 1rem;
+        margin-top: 0rem;
     }
 
     & .book {
